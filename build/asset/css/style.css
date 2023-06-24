@@ -28,7 +28,7 @@ body{
     font-family: 'Queensides', sans-serif ;
 }
 
-.active {
+.status {
     color: #d1897e;
   
 }
@@ -316,8 +316,41 @@ body{
 }
 
 @media screen and (max-width: 900px) {
-  .nav-link{
-    display: none;
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 350px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px auto 0 auto;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul{
+    opacity: 1;
+  }
+
+  .nav-bar ul li:first-child{
+    margin-left: 15px;
+  }
+
+  .nav-bar ul li{
+    margin-top: 30px;
   }
 
   .nav-btn {
