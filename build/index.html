@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Waisted || Home</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <!-- <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+              <a href="#" class="text-gray-800 font-bold text-lg">Logo</a>
+              <div class="ml-4 hidden md:block">
+                <ul class="flex space-x-4">
+                  <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                  <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
+                  <li><a href="#" class="text-gray-600 hover:text-gray-800">Services</a></li>
+                  <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden md:flex items-center">
+              <button id="darkModeToggle" class="text-gray-600 hover:text-gray-800 mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path
+                    d="M12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6m0 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 2a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z" />
+                </svg>
+              </button>
+              <button id="notificationsToggle" class="text-gray-600 hover:text-gray-800 mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path
+                    d="M11 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2zm6-6V11c0-2.76-2.24-5-5-5S7 8.24 7 11v5l-2 2v1h14v-1l-2-2zm-4 2H9v-6c0-1.68 1.06-3.13 2.58-3.69.3-.12.62-.18.92-.31 1.49-.62 2.5-2.03 2.5-3.59V4a2 2 0 1 0-4 0v.41c0 1.56 1.01 2.97 2.5 3.59.3.13.62.19.92.31C13.94 8.87 15 10.32 15 12v6zm-5 2a3 3 0 0 1-3-3h6a3 3 0 0 1-3 3z" />
+                </svg>
+              </button>
+              <button id="menuToggle" class="text-gray-600 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path
+                    d="M4 6h16a2 2 0 0 1 2 2v1c0 .68-.12 1.32-.34 1.92l-2.29 5.28a2 2 0 0 1-1.86 1.24H8.49a2 2 0 0 1-1.86-1.24L4.34 10.92A5.02 5.02 0 0 1 4 9V8c0-1.1.9-2 2-2zm2.45 8.55A3 3 0 0 0 8 17h8a3 3 0 0 0 2.55-1.45l2.5-2.5a1 1 0 0 0 0-1.41L18.54 9H5.46l-1.05 1.64a1 1 0 0 0 0 1.41l2.5 2.5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="mobileMenu" class="hidden md:hidden">
+            <ul class="flex flex-col space-y-4">
+              <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Home</a></li>
+              <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">About</a></li>
+              <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Services</a></li>
+              <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      
+    <!-- <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center  h-16">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center">
+                        <div class="flex-shrink-0">
+                            <a href="#" class="text-gray-800 text-lg font-semibold">Logo</a>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                                <a href="#" class="text-gray-800 hover:text-gray-600 px-3 py-2 font-medium">Home</a>
+                                <a href="#" class="text-gray-800 hover:text-gray-600 px-3 py-2 font-medium">About</a>
+                                <a href="#" class="text-gray-800 hover:text-gray-600 px-3 py-2 font-medium">Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-gray-600">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
+            <div class="flex flex-col justify-center items-center px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-gray-800 hover:text-gray-400 px-3 py-2 text-base font-medium">Home</a>
+                <a href="#" class="text-gray-800 hover:text-gray-400 px-3 py-2 text-base font-medium">About</a>
+                <a href="#" class="text-gray-800 hover:text-gray-400 px-3 py-2 text-base font-medium">Services</a>
+            </div>
+        </div>
+    </nav> -->
+    <nav class=" bg-white shadow flex justify-between items-center" id="navbar">
+        <div class="flex justify-center items-center">
+            <span class="ml-3">
+                <img src="asset/img/logo.jpg" alt="">
+            </span>
+        </div>
+
+        <ul class="nav-link flex space-x-6">
+            <li>
+                <a href="" class="active">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Product
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    About us
+                </a>
+            </li>
+        </ul>
+
+        <ul class="flex space-x-3 mr-4">
+            <li>
+                <a href="./login.html">
+                    <img src="asset/img/icons/profile.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="asset/img/icons/search.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="asset/img/icons/cart.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <button class="nav-btn hidden" id="navbarToggle">
+            <ion-icon name="menu-outline" class="w-10 h-10"></ion-icon>
+        </button>
+    </nav>
+
+    <div class="navMenu hidden" id="navbarMenu">
+        <ul class="nav-link flex flex-col justify-center items-center space-x-6">
+            <li>
+                <a href="" class="active">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Product
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    About us
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="grid place-content-center px-6">
+        <div class="hero-section flex justify-between items-center px-16">
+            <div>
+                <img src="asset/img/Frame-1.png" alt="">
+            </div>
+
+
+            <div class="desc flex justify-between items-center flex-col p-5">
+                <h1>
+                    Embrace your body, embrace your confidence.
+                </h1>
+
+                <p class="leading-loose">
+                    These beautiful adornments are more than just fashion accessories – they are a celebration of
+                    femininity, body positivity, and self-expression.
+                </p>
+
+                <a href="#" class="shop-btn px-5 py-4 rounded mt-3">
+                    Shop now
+                </a>
+
+            </div>
+
+            <div>
+                <img src="asset/img/Frame-2.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="about-section flex flex-col pt-8 pl-10">
+            <div class="flex justify-between ml-16">
+                <h1 class="text-4xl ml-9 mb-10 leading-loose tracking-widest md:text-4xl sm:text-3xl">
+                    <span class="lg:text-white md:text-black sm:text-black">How</span> waist <br> <span
+                        class="lg:text-white md:text-black sm:text-black">beads</span> embraces <br> <span
+                        class="lg:text-white md:text-black sm:text-black">femin</span>ine grace.
+                </h1>
+
+                <div class="about-img-2 -mr-6">
+                    <img src="/build/asset/img/about-img-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="about-custom flex justify-between">
+                <div class="about-img-1 ml-6 ">
+                    <img src="/build/asset/img/about-img-1.png" alt="" class="">
+                </div>
+
+                <div class="about-desc w-3/5 mt-10 flex flex-col items-center">
+                    <div class="p-cont mb-6 md:mb-6 sm:mb-4">
+                        <p class="tracking-wide" id="paragraph">
+                            Waist beads have a rich cultural history and hold deep significance in <br>
+                            many African and Afro-Caribbean communities. These beautiful <br>
+                            adornments are more than just fashion accessories – they are a <br>
+                            celebration of femininity, body positivity, and self-expression.
+                            <span id="dots">...</span>
+                            <br>
+                            <br>
+                            <span class="hidden" id="more">
+                                Traditionally, waist beads are worn around the waist or hips, just above the belly <br>
+                                button. They are typically made of tiny beads, often in a variety of colors, sizes, <br>
+                                and materials such as glass, clay, or semi-precious stones. Each bead is carefully <br>
+                                threaded together to create a strand that can be customized to fit the individual's <br>
+                                unique measurements.
+                            </span>
+                        </p>
+
+                        <div class="grid place-content-center my-6">
+                            <button type="button" class="btn-more rounded-md" id="readMoreBtn">Read More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product">
+
+            <h1 class="text-3xl text-center">
+                Our Product
+            </h1>
+
+            <div class="product-img">
+                <img src="./asset/img/product/product-1.png" alt="product image">
+                <img src="./asset/img/product/product-2.png" alt="product image">
+                <img src="./asset/img/product/product-3.png" alt="product image">
+                <img src="./asset/img/product/product-4.png" alt="product image">
+                <img src="./asset/img/product/product-5.png" alt="product image">
+                <img src="./asset/img/product/product-6.png" alt="product image">
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div>
+                <img src="./asset/img/benefit/benefit-1.png" alt="benefit image">
+
+                <div>
+                    <h1 class="text-4xl tracking-wider">
+                        Benefits Of <br> Waist Beads
+                    </h1>
+
+
+                    <p class="text-3xl mb-5">01</p>
+
+
+                    <p class="font-semibold">Body Awareness :</p>
+
+                    <p>
+                        Waist beads can serve as a natural waistline marker, allowing <br> individuals to gauge changes
+                        in their weight and body shape. By <br> wearing waist beads, people become more mindful of their
+                        bodies and <br> can track progress in their fitness or weight management journey.
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="text-3xl">02</p>
+
+
+                    <p class="font-semibold">Body Confidence and Empowerment:</p>
+
+                    <p>
+                        Waist beads celebrate the natural curves and beauty of the female <br> body. They can enhance a
+                        person's self-confidence and body positivity <br> by providing a tangible reminder of their
+                        unique shape and <br> encouraging self-acceptance.
+                    </p>
+
+                </div>
+
+                <img src="./asset/img/benefit/benefit-2.png" alt="">
+            </div>
+            <div>
+                <img src="./asset/img/benefit/benefit-3.jpeg" alt="benefit image">
+
+                <div>
+                    <p class="text-3xl mb-5">03</p>
+
+
+                    <p class="font-semibold">Symbolism and Cultural Connection:</p>
+
+                    <p>
+                        For individuals from African or Afro-Caribbean backgrounds, waist beads <br> hold cultural and
+                        symbolic significance. They can serve as a connection to <br> their heritage, traditions, and
+                        ancestral roots, fostering a sense of pride and <br> belonging.
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="text-3xl">04</p>
+
+
+                    <p class="font-semibold">Sensuality and Intimacy:</p>
+
+                    <p>
+                        Waist beads can enhance sensuality and intimacy, both for the wearer and <br> their partner. The
+                        gentle movement and the tactile sensation of the beads <br> against the skin can create a
+                        heightened sense of pleasure and intimacy.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="./asset/img/text.png" alt="">
+
+            <div class="slider">
+                <img src="./asset/img/slide/slide-1.png" alt="">
+                <img src="./asset/img/slide/slide-2.png" alt="">
+                <img src="./asset/img/slide/slide-3.png" alt="">
+                <img src="./asset/img/slide/slide-4.png" alt="">
+                <img src="./asset/img/slide/slide-5.png" alt="">
+            </div>
+
+            <p class="text-sm my-10">
+                Within the delicate strands of waist beads lies a captivating story of cultural heritage, <br>
+                self-expression, and feminine empowerment, woven together to celebrate the beauty <br> that resides
+                within.
+            </p>
+        </div>
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>
