@@ -18,9 +18,10 @@
             </span>
         </div>
 
-        <ul class="nav-link flex space-x-6">
+        <div class="nav-bar shadow-lg lg:shadow-none">
+            <ul class="nav-link flex space-x-6">
             <li>
-                <a href="" class="active">
+                <a href="" class="status">
                     Home
                 </a>
             </li>
@@ -36,6 +37,8 @@
             </li>
         </ul>
 
+        </div>
+        
         <ul class="flex space-x-3 mr-4">
             <li>
                 <a href="./login.html">
@@ -54,30 +57,10 @@
             </li>
         </ul>
 
-        <button class="nav-btn hidden" id="navbarToggle">
+        <button class="nav-btn hidden" id="navBtn">
             <ion-icon name="menu-outline" class="w-10 h-10"></ion-icon>
         </button>
     </nav>
-
-    <div class="navMenu hidden" id="navbarMenu">
-        <ul class="nav-link flex flex-col justify-center items-center space-x-6">
-            <li>
-                <a href="" class="active">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Product
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    About us
-                </a>
-            </li>
-        </ul>
-    </div>
 
     <main class="grid place-content-center px-6">
         <div class="hero-section flex justify-between items-center px-16">
@@ -267,6 +250,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./asset/js/main.js"></script>
+
+    <script>
+        hamburger = document.getElementById("navBtn");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+    </script>
 </body>
 
 </html>
